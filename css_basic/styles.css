@@ -26,3 +26,8 @@ article, aside {
 img {
     max-width: 90vw;
 }
+
+header {
+    padding-left: 8px;
+    padding-right: 8px;
+}
