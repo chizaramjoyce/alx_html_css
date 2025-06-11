@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+}
+
+header {
+    padding: 35px 10% 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.logo {
+    width: 167.02px;
+}
+
+.banner {
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 10% 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 7.5rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-keywords {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.banner-keywords span {
+    font-weight: 700;
+    color: white;
+}
+
+.banner button {
+    margin-top: 30px;
+    padding: 14px 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
+
+.banner h2 {
+    margin-top: 150px;
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+.banner h2 strong {
+    font-size: 700;
+    color: #C271FF;
+}
+
+.banner .testimonials {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.banner .testimonials > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .testimonials > div img {
+    border-radius: 50%;
+}
+
+.banner .testimonials > div h3 {
+    margin: 15px 0 5px;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.banner .testimonials > div p {
+    margin: 5px 0;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    header{
+        padding: 35px 5% 10px;
+    }
+    
+    .banner {
+        padding: 100px 5% 50px;
+    }
+}
