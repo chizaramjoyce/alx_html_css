@@ -154,6 +154,96 @@ header nav ul li a {
     margin: 0;
 }
 
+.tutorials {
+    padding: 100px 10%;
+}
+
+.tutorials h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 80px;
+}
+
+.tutorials h2 strong {
+    font-weight: 700;
+    color: #C271FF;
+}
+
+.tutorials .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tutorials .card {
+    width: 255px;
+}
+
+.tutorials .card .img-wrapper {
+    position: relative;
+}
+
+.tutorials .card .img-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorials .card .content {
+    padding: 15px;
+}
+
+.tutorials .card .content h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.tutorials .card .content .message {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    margin: 5px 0;
+    color: #07162980;
+}
+
+.tutorials .card .content .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 15px;
+}
+
+.tutorials .card .content .author img {
+    width: 30px;
+}
+
+.tutorials .card .content .author h4 {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #C271FF;
+}
+
+.tutorials .card .content .rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tutorials .card .content .rating p {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #C271FF;
+}
+
 @media screen and (max-width: 1024px) {
     header{
         padding: 35px 5% 10px;
@@ -161,5 +251,13 @@ header nav ul li a {
     
     .banner {
         padding: 100px 5% 50px;
+    }
+
+    .feedback {
+        padding: 100px 5%;
+    }
+
+    .tutorials {
+        padding: 100px 5%;
     }
 }
