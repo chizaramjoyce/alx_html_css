@@ -127,6 +127,33 @@ header nav ul li a {
     text-align: center;
 }
 
+.feedback {
+    padding: 100px 10%;
+    background-color: #C271FF;
+}
+
+.feedback > div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 943px;
+    margin: auto;
+}
+
+.feedback > div q, .feedback > div p {
+    font-size: 1.375rem;
+    color: white;
+}
+
+.feedback > div .author {
+    margin: 20px 0 5px;
+    font-weight: 700;
+}
+
+.feedback > div .author-desc {
+    margin: 0;
+}
+
 @media screen and (max-width: 1024px) {
     header{
         padding: 35px 5% 10px;
