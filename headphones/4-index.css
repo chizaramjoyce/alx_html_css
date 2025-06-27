@@ -237,6 +237,7 @@ header nav ul li a:hover {
     border: none;
     border-bottom: 1px solid black;
     padding: 4px 12px;
+    box-sizing: border-box;
 }
 
 .contact button {
@@ -299,7 +300,7 @@ footer p {
         padding: 210px 5% 50px;
     }
 
-    .feedback, .tutorials, .membership, .faq {
+    .tutorials, .results, .contact {
         padding: 100px 5%;
     }
 
