@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+}
+
+header {
+    padding: 35px 10% 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+header div h1{
+    font-size: 0.9rem;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+header nav ul li a:hover {
+    color: #FF6565;
+}
+
+.logo {
+    width: 167.02px;
+}
+
+.banner {
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 210px 10% 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner .subtitle, .banner .description {
+    color: white;
+}
+
+.banner button {
+    margin-top: 30px;
+    padding: 14px 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 2px 20px 0px #00000080;
+}
+
+.banner h2 {
+    margin-top: 150px;
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+.banner h2 strong {
+    font-size: 700;
+    color: #FF6565;
+}
+
+.banner .testimonials {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.banner .testimonials > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .testimonials > div img {
+    border-radius: 50%;
+}
+
+.banner .testimonials > div h3 {
+    margin: 15px 0 5px;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.banner .testimonials > div p {
+    margin: 5px 0;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+.tutorials, .contact {
+    padding: 100px 10%;
+}
+
+.tutorials h2, .contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.tutorials p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tutorials .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tutorials .card {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tutorials .card img {
+    width: 50%;
+}
+
+.tutorials .card h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tutorials .card p {
+    font-size: 0.875rem;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.results {
+    padding: 100px 10%;
+    background-image: url(./images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.results h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.results p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.results .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.results .card {
+    width: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 150px;
+}
+
+.results .card .pentagon {
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    width: 55%;
+    border-top: 92px solid #FF6565;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.results .card .pentagon::after {
+    position: absolute;
+    content: '';
+    border-bottom: 60px solid #FF6565;
+    border-left: 92px solid transparent;
+    border-right: 92px solid transparent;
+    bottom: 92px;
+    left: -48px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    gap: 50px;
+}
+
+.contact form > div {
+    width: 100%;
+}
+
+.contact label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 4px 12px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    padding: 14px 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 2px 20px 0px #00000080;
+}
+
+footer > div {
+    padding: 100px 10% 20px;
+    background-color: #071629;
+}
+
+footer .logo {
+    max-width: 200px;
+}
+
+footer > div > div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .social-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .social-links > div {
+    display: flex;
+}
+
+footer .social-links img {
+    width: 30px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 0.75rem;
+    margin: 50px 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 35px 5% 10px;
+    }
+    
+    .banner {
+        padding: 210px 5% 50px;
+    }
+
+    .tutorials, .results, .contact {
+        padding: 100px 5%;
+    }
+
+    footer > div {
+        padding: 100px 5% 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    footer > div > div {
+        flex-direction: column;
+    }
+}
