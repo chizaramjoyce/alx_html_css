@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+}
+
+header {
+    padding: 35px 10% 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+header div h1{
+    font-size: 0.9rem;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+header nav ul li a:hover {
+    color: #FF6565;
+}
+
+.logo {
+    width: 167.02px;
+}
+
+.banner {
+    background-image: url(./images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 210px 10% 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner .subtitle, .banner .description {
+    color: white;
+}
+
+.banner button {
+    margin-top: 30px;
+    padding: 14px 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 2px 20px 0px #00000080;
+}
+
+.tutorials {
+    padding: 100px 10%;
+}
+
+.tutorials h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.tutorials p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tutorials .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tutorials .card {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tutorials .card img {
+    width: 50%;
+}
+
+.tutorials .card h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tutorials .card p {
+    font-size: 0.875rem;
+    margin: 5px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 35px 5% 10px;
+    }
+    
+    .banner {
+        padding: 210px 5% 50px;
+    }
+
+    .tutorials {
+        padding: 100px 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+}
